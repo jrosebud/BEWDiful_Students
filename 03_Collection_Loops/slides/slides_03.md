@@ -64,6 +64,8 @@ For Reference:
 		'Hi! String here!'.class 	#String
 		"I'm a string tool".class	#String
 
+---
+
 ##Symbols
 
 * Symbols are named values. Their names ARE their values.
