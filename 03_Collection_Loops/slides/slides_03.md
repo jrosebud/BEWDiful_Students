@@ -416,8 +416,6 @@ ex_arrays.rb
 
 ex_teddit_hashes.rb
 
-You'll need your conditional_teddit.rb solution to get started.
-
 ---
 
 ## Feedback
