@@ -51,6 +51,8 @@ What is this doing?
 		puts "There's a rob in there"
 	end
 
+---
+
 ## Quiz
 
 Why is knowing what type of data something is important?
