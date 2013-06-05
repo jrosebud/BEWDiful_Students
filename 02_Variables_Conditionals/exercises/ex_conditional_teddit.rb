@@ -8,3 +8,30 @@
 #For example:
 # "Cats frolic inspite of a tuna shortage" should give you 5 times the upvotes!
 
+def ask_question(question)
+	print question
+	
+	gets.chomp # what gets returned from the function
+end
+
+# assigning what was returned to a variable
+title = ask_question("What is the title of the story, yo? ")
+category = ask_question("What category do you want this in? ")
+votes = ask_question("How many upvotes does this story have? ")
+
+# i'm outputting a title!
+puts "Your title is: \"#{title}.\""
+puts "The story is in the #{category} category."
+
+#count upvotes, yo
+
+if category.downcase == "cats"
+	upvotes = votes.to_i * 5
+	puts "Cats get five times the upvotes! Your story now has #{upvotes} upvotes!"
+elsif category.downcase == "bacon"
+	upvotes = votes.to_i * 8
+	puts "Bacon gets eight times the upvotes! Your story now has #{upvotes} upvotes!"
+else
+	upvotes = votes.to_i
+	puts "Your story is so sad. It only has #{upvotes} upvotes."
+end
