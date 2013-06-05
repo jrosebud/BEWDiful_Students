@@ -7,6 +7,7 @@
 
 ##Agenda
 
+* Quiz
 * Symbols
 *	Iteration - Loops
 *	Collections (New Datatypes, yay!!)
@@ -14,6 +15,52 @@
 	*	Hashes
 
 ---
+
+##Quiz
+
+What is this:
+
+	def ask_question(question)
+		puts question
+		return get.chomp
+	end
+
+---
+
+##Quiz
+
+Describe this code:
+
+	name = "Robert Ross"
+
+---
+
+##Quiz
+
+What is IRB?
+
+---
+
+## Quiz
+
+What is this doing?
+
+	name = "Robert Ross"
+
+	if name.include?("Rob")
+		puts "There's a rob in there"
+	end
+
+## Quiz
+
+Why is knowing what type of data something is important?
+
+For Reference:
+
+		1.class 					#Fixnum
+		1.99.class					#Float
+		'Hi! String here!'.class 	#String
+		"I'm a string tool".class	#String
 
 ##Symbols
 
