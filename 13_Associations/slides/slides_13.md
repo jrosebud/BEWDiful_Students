@@ -80,7 +80,7 @@ has_one :through
 has_and_belongs_to_many
 ```
 
-We will cover the bolded associations.
+We will cover the first three.
 
 ---
 
@@ -88,7 +88,7 @@ We will cover the bolded associations.
 
 User has_many Tweets
 
-Tweet __belongs_to__ User
+Tweet `belongs_to` User
 
 ![](../../assets/rails/has_many_belongs_to.png)
 
@@ -97,7 +97,7 @@ Tweet __belongs_to__ User
 
 ##Associations
 
-Tweet __has_many__ hash_tags __through__ hash_tagging
+Tweet `has_many` hash_tags `through` hash_tagging
 
 
 ![](../../assets/rails/has_many_through.png)
