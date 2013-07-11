@@ -43,7 +43,8 @@ The `Story` model does not have a `user_id` attribute..... yet.
 
 ##Associations
 
-Users need to be __associated__ to a story.
+Users need to be __associated__ to a Story.
+Stories need to be __associated__ to a User.
 
 ---
 
