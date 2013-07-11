@@ -71,18 +71,14 @@ With associations its best to step away from the code and understand conceptuall
 ##Associations
 ###Rails Active Record Associations
 
-__belongs_to__
-
-__has_many__
-
-__has_many :through__
-
-_has_one_
-
-_has_one :through_
-
-_has_and_belongs_to_many_
-
+```
+belongs_to
+has_many
+has_many :through
+has_one
+has_one :through
+has_and_belongs_to_many
+```
 
 We will cover the bolded associations.
 
@@ -90,7 +86,7 @@ We will cover the bolded associations.
 
 ##Associations
 
-User __has_many__ Tweets
+User has_many Tweets
 
 Tweet __belongs_to__ User
 
