@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyText
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  website: MyText
+  photo: MyText
+  open: 2013-07-18 21:02:47
+  close: 2013-07-18 21:02:47
+  open2: 2013-07-18 21:02:47
+  close2: 2013-07-18 21:02:47
+
+two:
+  name: MyString
+  address: MyText
+  city: MyString
+  state: MyString
+  zip: MyString
+  phone: MyString
+  website: MyText
+  photo: MyText
+  open: 2013-07-18 21:02:47
+  close: 2013-07-18 21:02:47
+  open2: 2013-07-18 21:02:47
+  close2: 2013-07-18 21:02:47

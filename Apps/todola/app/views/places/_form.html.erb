@@ -1,0 +1,15 @@
+<%= simple_form_for @place do |f| %>
+  <%= f.input :name, label: 'Name of Establishment/Place' %>
+  <%= f.input :address %>
+  <%= f.input :city %>
+  <%= f.input :state %>
+  <%= f.input :zip %>
+  <%= f.input :phone %>
+  <%= f.input :website %>
+  <%= f.input :open, label: 'Opening Time' %>
+  <%= f.input :close, label: 'Closing Time' %>
+  <%= f.input :open2, label: 'Second Opening Time (if applicable)' %>
+  <%= f.input :close2, label: 'Second Closing Time (if applicable)' %>
+  <%= f.input :image %>
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>

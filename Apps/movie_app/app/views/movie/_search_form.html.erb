@@ -1,0 +1,4 @@
+<%= form_for @movie, url: movie_search_path do |form| %>
+  <p>Title: <%= form.text_field :title %></p>
+  <%= form.submit "Find a Movie" %>
+<% end %>

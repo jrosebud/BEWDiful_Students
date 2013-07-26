@@ -31,27 +31,6 @@ The game is often used as a choosing method in a way similar to coin flipping, d
    def secret_number
    end
 
-   def rock_paper_scissors
-
-   end
-
-   def rock_paper_scissors_play
-    rps = {
-      "rock" => "scissors",
-      "scissor" => "paper",
-      "paper" => "rock"
-    }
-    @your_throw = params[:throw]
-    @rails_throw = ["rock", "paper", "scissors"].sample
-    if @your_throw == @rails_throw
-      @status = "Tie!"
-    elsif rps[@your_throw] == @rails_throw
-      @status = "Win"
-    else
-      @status = "Lose"
-    end
-  end
-
   def secret_number_play
     @guess = params[:guess].to_i
     @answer = rand(10) + 1
@@ -61,4 +40,23 @@ The game is often used as a choosing method in a way similar to coin flipping, d
       render 'lose'
     end
   end
+  
+  def rps
+  
+  end
+  
+  def rps_play
+   
+    @throw = params[:throw]
+    @computer_throw = ["rock", "paper", "scissors"].sample
+      
+    if @throw == @computer_throw
+      @result = "It's a tie!"    
+    elsif @throw == "rock" && @computer_throw == "scissors"
+      @result = "You win!"
+    elsif @throw == "scissors" && computer_throw == "paper"
+      @result == "You win!"
+    end
+  end
+  
 end

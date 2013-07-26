@@ -1,0 +1,10 @@
+<h1><%= @shirt.name %></h1>
+
+<p><strong>Color:</strong> <%= @shirt.color %><br />
+<strong>Description:</strong><br />
+<%= @shirt.description %>
+</p>
+
+<p><%= link_to "Edit Shirt", edit_shirt_path(@shirt) %><br />
+<%= link_to "Delete Shirt", shirt_path(@shirt), method: :delete, confirm: "You sure?" %><br />
+<%= link_to "Go back to list of shirts", shirts_path %></p>

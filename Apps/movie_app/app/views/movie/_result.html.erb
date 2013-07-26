@@ -1,0 +1,5 @@
+<ul>
+<% @movies.each do |movie| %>
+  <li><%= "Title: #{movie.title} | Description: #{movie.description} | Year Released: #{movie.year_released}" %></li>
+<% end %>
+</ul>

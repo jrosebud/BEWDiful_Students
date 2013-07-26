@@ -1,0 +1,9 @@
+<h1>Welcome to Ritly!</h1>
+
+<p><%= link_to "Sign up for an account", new_user_registration_path %> to create a new link.</p>
+
+<p><%= link_to "Add a new link", new_link_path %></p>
+
+<% @links.each do |link| %>
+  <%= link.url %><br />
+<% end %>

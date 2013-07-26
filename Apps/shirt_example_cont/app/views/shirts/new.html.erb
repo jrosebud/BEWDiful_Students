@@ -1,0 +1,11 @@
+<h1>Make a new shirt!</h1>
+
+<ul style="color: red;">
+  <% @shirt.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+</ul>
+
+<%= render "form" %>
+
+<p><%= link_to "Go back to list of shirts", shirts_path %></p>

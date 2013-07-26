@@ -1,0 +1,11 @@
+<h1>The Shirt Emporium</h1>
+
+<p style="color: green;"><%= flash[:success] %></p>
+
+<p><%= link_to "Add a new shirt", new_shirt_path %></p>
+
+<ul>
+<% @shirts.each do |shirt| %>
+  <li><%= shirt.name %> - <%= link_to "Edit Shirt", edit_shirt_path(shirt) %> | <%= link_to "View Shirt", shirt %> | <%= link_to "Delete Shirt", shirt_path(shirt), method: :delete, confirm: "You sure?" %></li>
+<% end %>
+</ul>
