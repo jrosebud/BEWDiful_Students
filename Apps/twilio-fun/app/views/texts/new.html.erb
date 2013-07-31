@@ -1,0 +1,6 @@
+<h1>Send a text!</h1>
+
+<%= simple_form_for :text, url: texts_path do |form| %>
+  <%= form.input :message %>
+  <%= form.submit 'Send!' %>
+<% end %>
