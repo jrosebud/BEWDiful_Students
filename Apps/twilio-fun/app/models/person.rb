@@ -21,6 +21,10 @@ class Person < ActiveRecord::Base
     messages.each { |item| send_message(item) }
   end
   
+  def formatted_phone_number
+    "+1#{phone_number}"
+  end
+  
   private
   
   def client

@@ -2,4 +2,6 @@
 
 <p>What do you want to do?</p>
 
-<%= render 'form' %>
+<% @areas.each do |area| %>
+  <li><%= area.area %></li>
+<% end %>
