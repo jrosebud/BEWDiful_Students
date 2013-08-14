@@ -4,18 +4,13 @@
 
 <p>What do you want to do?</p>
 
-<% @places.each do |place| %>
-  <h3><%= place.name %></h3>
-  <%= place.address %><br />
-  <%= place.city %>, <%= place.state %> <%= place.zip %><br />
-  <%= place.phone %><br />
-  <a href="<%= place.website %>" target="_blank"><%= place.website %></a><br />
-  
-  <p><strong>Hours:</strong><br />
-  <%= place.days %><br />
-  <%= place.open.strftime("%I:%M%p") %> - <%= place.close.strftime("%I:%M%p") %><br /></p>
-  
-  <img src="<%= place.image.thumb.url %>" />
+<% @places.each do |p| %> 
+  <div class="span3"> 
+  <%= link_to (image_tag (p.image.thumb.url)), place_path(p) %>
+  <h4><%= link_to p.name, place_path(p) %></h4>
+  </div>
 <% end %>
+
+<div style="clear: both;"></div>
 
 <p><%= link_to "Create a new listing", new_place_path %></p>

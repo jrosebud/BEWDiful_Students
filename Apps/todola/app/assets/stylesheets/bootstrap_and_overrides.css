@@ -10,3 +10,8 @@
       width: 400px;
       height: 100px;
   }
+  
+  .listing-photo {
+      max-width: 600px;
+      height: auto;
+  }
