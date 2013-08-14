@@ -1,7 +1,21 @@
 <h1>Welcome to ToDo L.A.!</h1>
 
+<h2><em>Your bossy friend who always has a suggestion.</em></h2>
+
 <p>What do you want to do?</p>
 
-<% @areas.each do |area| %>
-  <li><%= area.area %></li>
+<% @places.each do |place| %>
+  <h3><%= place.name %></h3>
+  <%= place.address %><br />
+  <%= place.city %>, <%= place.state %> <%= place.zip %><br />
+  <%= place.phone %><br />
+  <a href="<%= place.website %>" target="_blank"><%= place.website %></a><br />
+  
+  <p><strong>Hours:</strong><br />
+  <%= place.days %><br />
+  <%= place.open.strftime("%I:%M%p") %> - <%= place.close.strftime("%I:%M%p") %><br /></p>
+  
+  <img src="<%= place.image.thumb.url %>" />
 <% end %>
+
+<p><%= link_to "Create a new listing", new_place_path %></p>

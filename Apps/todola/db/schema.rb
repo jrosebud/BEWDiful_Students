@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130802055737) do
+ActiveRecord::Schema.define(version: 20130814040750) do
 
   create_table "areas", force: true do |t|
     t.string   "name"
@@ -41,6 +41,11 @@ ActiveRecord::Schema.define(version: 20130802055737) do
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "description"
+    t.string   "days"
+    t.string   "days2"
+    t.time     "open2"
+    t.time     "close2"
   end
 
   add_index "places", ["area_id"], name: "index_places_on_area_id"

@@ -100,6 +100,7 @@ GEM
     rake (10.1.0)
     rdoc (3.12.2)
       json (~> 1.4)
+    rmagick (2.13.2)
     ruby-hmac (0.4.0)
     sass (3.2.9)
     sass-rails (4.0.0)
@@ -152,6 +153,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0.rc2)
+  rmagick (~> 2.13.2)
   sass-rails (~> 4.0.0.rc2)
   sdoc
   simple_form
