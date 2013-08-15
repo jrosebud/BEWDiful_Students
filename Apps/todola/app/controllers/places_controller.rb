@@ -1,9 +1,8 @@
 class PlacesController < ApplicationController
 
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   def index
-    @areas = Area.all
     @places = Place.all
   end
   
@@ -16,7 +15,7 @@ class PlacesController < ApplicationController
     @place.user = current_user
     
     if @place.save
-      redirect_to places_path
+      render :show
     else
       render :new
     end
@@ -26,10 +25,27 @@ class PlacesController < ApplicationController
     @place = Place.find params[:id]
   end
   
+  def edit
+    @place = Place.find params[:id]
+  end
+  
+  def update
+    place = Place.find params[:id]
+    place.update_attributes place_params
+    
+    redirect_to place_path(place)
+  end
+  
+  def destroy
+    Place.find(params[:id]).destroy
+    
+    redirect_to places_path, flash: { success: "Listing was deleted." }
+  end
+  
   private
   
   def place_params
-  params.require(:place).permit(:name, :address, :city, :state, :zip, :phone, :website, :days, :open, :close, :days2, :open2, :close2, :area_id, :image, :category_id)
+  params.require(:place).permit(:name, :address, :city, :state, :zip, :phone, :website, :days, :open, :close, :days2, :open2, :close2, :area_id, :image, :description, :category_id)
   end
 
 end

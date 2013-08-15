@@ -15,3 +15,19 @@
       max-width: 600px;
       height: auto;
   }
+  
+  .place-grid {
+      margin-left: 0;
+      overflow: hidden;
+  }
+  
+  .container-fluid {
+      max-width: 1140px;
+      margin: 0 auto;
+  }
+  
+  .place-listing {
+      margin-left: 0 !important;
+      margin-right: 2.564102564102564%;
+      margin-bottom: 2.564102564102564%;
+  }
